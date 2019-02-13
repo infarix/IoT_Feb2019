@@ -35,8 +35,12 @@ Dans le cadre du projet, nous utilisons deux cartes Nodemcu v3. Une va être pla
 Les deux cartes sont équipées de deux capteurs : un capteur de température et un capteur d'humidité.
  
 Nous connectons les deux cartes en Wifi. Nous avons choisi de ne pas utiliser la technologie Sigfox car nous n'avons pas besoin de communiquer à grande distance. 
+
  
 Nous utilisons la technologie MQTT
+
+Nous avons utilisé le capteur DHT11 afin de relever les températures extérieures. Le capteur DHT11 est capable de mesurer des températures de 0 à +50°C avec une précision de +/- 2°C et des taux d'humidité relative de 20 à 80% avec une précision de +/- 5%. Une mesure peut être réalisée toutes les secondes. Il faudra cependant faire attention car le DHT11 ne peut pas mesurer (et supporter) des températures négatives ou des températures supérieures à 50°C. 
+
 
 
 image
