@@ -45,9 +45,9 @@ void onConnectionEstablished()
 void loop()
 {
   delay(dht.getMinimumSamplingPeriod());
-
-  float humidity = dht.getHumidity();
-  float temperature = dht.getTemperature();
+// La lecture du capteur prend 250ms
+  float humidity = dht.getHumidity(); //on lit l'hygrometrie
+  float temperature = dht.getTemperature(); //on lit la temperature en celsius (par defaut)
 
   Serial.print(dht.getStatusString());
   Serial.print("\t");
